@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Calistoga";
+  src: url("https://fonts.gstatic.com/s/calistoga/v1/6NUU8F2OJg6MeR7l4e0fs8wB.woff2")
+    format("woff2");
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Calistoga", Verdana, sans-serif;
+}

@@ -3,13 +3,33 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header>
-            <h1>Welcome to our Website</h1>
-        </header>
-        <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna felis, bibendum eget tellus eu, facilisis fermentum lorem. Ut metus mauris, gravida eget lobortis in, consequat non urna. Aenean ipsum nibh, laoreet in consequat vitae, cursus et sapien. Sed scelerisque lectus vitae mauris lobortis tempus. Nulla efficitur lorem erat, a suscipit lectus euismod vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc a velit sodales, ullamcorper ipsum sit amet, suscipit elit. Ut eleifend dolor et arcu iaculis bibendum. </p>
-        </section>
-        </main>
+        <form action="form-success.php" method="POST">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" class="form__input" required>
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" name="phone" id="phone"class="form__input">
+                <label for="e-mail">Your E-mail</label> 
+                <input type="email" name="e-mail" id="e-mail"class="form__input" required>
+                <p>Select Your Gender</p>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="undisclosed" name="gender" value="undisclosed">
+                <label for="undisclosed">Undisclosed</label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Purchase</legend>
+                <select name="product">
+                    <option value="product-one">Product One</option>
+                    <option value="product-two">Product Two</option>
+                    <option value="product-three">Product Three</option>
+                </select> 
+            
+            </fieldset>
+            <input type="submit" value="Buy Product">
+        </form>
     </body>
 </html>
